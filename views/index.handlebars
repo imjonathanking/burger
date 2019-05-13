@@ -1,6 +1,37 @@
-<div>
-{{#each burgers}}
-    <p>Burger name: {{burger_name}}</p>
-    <p>Devoured: {{devoured}}</p>
-{{/each}}
+<div class="notDevoured column transition">
+    <div class="columnTitle">
+        Not Devoured
+    </div>
+    {{#each notDevoured}}
+        <div class="burgerDiv">
+            <form>
+                <img class="burgerIcon" src="assets/img/burger_black.png">
+                <div class="burgerName">{{burger_name}}</div>
+                <button type="submit" class="devour" id={{id}}>Devour</button>
+            </form>
+        </div>
+    {{/each}}
+</div>
+
+<div class="formColumn column">
+    <img id="burgerImage" src="assets/img/burger.png">
+    <div id="title">Eat-Da-Burger</div>
+    <form id="form">
+        <input type="text" class="burgerInput transition">
+        <button type="submit" class="submitBurger transition">Add burger!</button>
+    </form>
+</div>
+
+<div class="devoured column transition">
+    <div class="columnTitle">
+        Devoured
+    </div>
+    {{#each devoured}}
+        <div class="burgerDiv">
+            <form>
+                <img class="burgerIcon" src="assets/img/burger_black.png">
+                <div class="burgerName eaten">{{burger_name}}</div>
+            </form>
+        </div>
+    {{/each}}
 </div>

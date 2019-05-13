@@ -1,0 +1,161 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    height: 100vh;
+    
+    font-family: 'Fredoka One', cursive;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.content{
+    background-color: #FFF9E3;
+
+    display: grid;
+    grid-template-columns: [left] 30% [middle] 40% [right] 30%;
+
+    height: 100%;
+}
+
+.notDevoured, .devoured{
+    background-color: rgb(255, 250, 219);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.notDevoured{
+    overflow: auto;
+    direction: rtl;
+}
+
+.devoured{
+    overflow: auto;
+}
+
+.transition{
+    /* Transition */
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out
+}
+
+#burgerImage{
+
+    height: 200px;
+}
+
+.formColumn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+#title{
+    font-size: 40px;
+}
+
+#form{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+
+.burgerInput{
+    height: 35px;
+    width: 300px;
+
+    font-size: 20px;
+    border: 2px solid #EDDC9E;
+    border-radius: 7px;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+    font-family: 'Fredoka One', cursive;
+    color: rgb(255, 49, 49);
+}
+
+.submitBurger{
+    height: 30px;
+    width: 100%;
+
+    background-color: rgb(255, 250, 219);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+    border: 2px solid #EDDC9E;
+    border-radius: 7px;
+
+    font-size: 20px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.focus{
+    box-shadow: 0 20px 28px rgba(71, 157, 255, 0.383), 0 10px 10px rgba(144, 214, 255, 0.356);
+}
+
+.columnDark{
+    background-color: rgb(192, 184, 167);
+}
+
+.burgerDiv{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    /* background-color: rgb(192, 184, 167); */
+    color: black;
+    width: 40%;
+    margin: 20px 0px;
+}
+
+.notDevoured{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.devoured{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.burgerIcon{
+    height: 40px;
+}
+
+.devour{
+    margin: 10px 0px;
+
+    background-color: rgba(209, 51, 51, 0.685);
+    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); */
+
+    border: 2px solid rgba(4, 39, 95, 0.911);
+    color: rgb(255, 250, 219);
+    border-radius: 7px;
+    font-size: 16px;
+    
+}
+
+.columnTitle{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+}
+
+.eaten{
+    margin-bottom: 10px;
+}

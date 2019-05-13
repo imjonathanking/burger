@@ -6,6 +6,8 @@ var express = require("express");
 
 var app = express();
 
+var orm = require("./config/orm");
+
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
 
