@@ -1,0 +1,26 @@
+body{
+    /* Sizing & Positioning */
+    margin: 0;
+    height: 100vh;
+}
+
+.grid{
+    /* Sizing & Positioning */
+    height: 100%;
+
+    /* Setup for Child Elements */
+    display: grid;
+    grid-template-rows: [navbar] 80px [content] auto [footer] 80px;
+}
+
+.navbar{
+    border: 2px solid green;
+}
+
+.content{
+    border: 2px solid purple;
+}
+
+.footer{
+    border: 2px solid blue;
+}
